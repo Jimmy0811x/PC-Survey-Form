@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">PC Building Survey Form</h1>
+    <p id="description">This is a short survey form about PC Building</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name</label>
+      <input id="name" required type="text" placeholder="Enter your name"><br>
+      <label for="email" id="email-label">Email</label>
+      <input id="email" type="email" required placeholder="Enter your email"><br>
+      <label for="number" id="number-label">Age (Optional):</label>
+      <input type="number" id="number" placeholder="Age" min="3" max="100"><br>
+      <p>In which phase are you?</p>
+      <select id="dropdown">
+        <option value="new-to-pc-building">New to PC Building</option>
+        <option value="built-a-pc-before">Built a PC Before</option>
+        <option value="build-pc's-often">Build PCs often</option>
+      </select>
+      <p>Why do you want to get into PC Building?</p>
+      <label>
+        <input value="tech" type="radio" name="options">I am fascinated by tech.</label><br>
+      <label>
+        <input value="save-money" type="radio" name="options">I want to save on money.</label><br>
+      <label>
+        <input value="hobby" type="radio" name="options">I want to try-out a new hobby.</label>
+      <p>What are the things you are most excited about?</p>
+      <label>
+        <input type="checkbox" value="games">Playing Games</label>
+      <label>
+        <input type="checkbox" value="software">Exploring Software</label>
+      <label>
+        <input type="checkbox" value="productivity">Productivity</label>
+      <label>
+         <input type="checkbox" value="browsing">Browsing the Internet</label>
+      <p>Any comments?</p>
+      <textarea placeholder="enter text here"></textarea><br>
+      <button type="submit" id="submit">Submit!</button>
+
+    </form>
+  </body>
+</html>
